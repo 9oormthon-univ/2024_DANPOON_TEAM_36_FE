@@ -1,8 +1,7 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import routes from "./routes";
-import { ThemeProvider } from "styled-components";
-import theme from "./theme";
-import { RecoilRoot } from "recoil";
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import routes from './routes';
+import { ThemeProvider } from 'styled-components';
+import theme from './theme';
 
 function App() {
   const elements = routes.map((item, index) => (
@@ -11,13 +10,11 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <RecoilRoot>
-        <Router>
-          <Routes>
-            {elements}
-          </Routes>
-        </Router>
-      </RecoilRoot>
+      <Router>
+        <Routes>
+          {elements}
+        </Routes>
+      </Router>
     </ThemeProvider>
   );
 }
