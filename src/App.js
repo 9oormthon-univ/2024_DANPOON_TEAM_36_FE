@@ -12,7 +12,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <RecoilRoot>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <Routes>
             {elements}
           </Routes>
