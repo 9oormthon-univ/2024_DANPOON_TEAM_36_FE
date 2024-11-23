@@ -10,7 +10,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router basename="2024_DANPOON_TEAM_36_FE">
         <Routes>
           {elements}
         </Routes>
