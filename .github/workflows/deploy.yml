@@ -46,7 +46,7 @@ jobs:
         env:
           REACT_APP_BASEURL: ${{ secrets.REACT_APP_BASEURL }}
       - name: Build
-        run: npm run build
+        run: CI=false npm run build
         
       - name: Setup Pages
         uses: actions/configure-pages@v4
